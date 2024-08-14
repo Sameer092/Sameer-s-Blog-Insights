@@ -15,7 +15,7 @@
     <p class ="alert"><%= alert %></p>
     <div>
       <% if user_signed_in? %>
-        <%= link_to "New Blog Post", new_blog_post_path %>
+        <%= link_to "New Blog Post", new_blog_post_path  %>
         <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "bg-red-500 text-white p-4 rounded hover:bg-red-600" %>
       <% end %>
     </div>

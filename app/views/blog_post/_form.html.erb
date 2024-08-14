@@ -17,9 +17,12 @@
       <%= form.label :body%>
       <%= form.text_area :body%>
     </div>
-
     <div>
-      <%= form.submit button_name%>
+      <%= form.label :published_at%>
+      <%= form.datetime_select :published_at, include_blank: true %>
+    </div>
+    <div>
+      <%= form.submit button_name , class: color_for_view%>
     </div>
   <% end %>
 </div>
